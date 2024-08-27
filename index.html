@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="./assets/Vector.png" alt="logo alura">
+    </header>
+
+    <main>
+        <div class="bienvenida" >
+            <h3 titulo_bienvenida> Bienvenidos al encriptador de texto</h3> 
+        </div>
+             
+
+        <section class="cajas_texto">
+
+            <div class="caja1">
+                <h1 class="inserta_texto_aqui">inserta texto aqui</h1>  
+                 <textarea id="texto-input"  placeholder="Ingrese su texto aquí..."></textarea>
+                 <p>Solo letras minúsculas y sin acentos </p>
+                 <br>
+                <button class="encrypt-button" onclick="clicEncriptar()" id="encrypt-button">Encriptar</button>
+            
+            </div> 
+
+            <div class="imagen_candado_container">
+                <img class="imagen_candado" src="./assets/llave.png" alt="logo de encriptacion">
+            </div>
+            
+                
+            <div class="caja2" > 
+                <h2 class="inserta_texto_aqui">Resultado</h2> 
+                <textarea class="caja_output" id="texto-output" placeholder=""></textarea>
+                <p id="mensaje_no_encontrado">Ningún mensaje fue encontrado</p>
+                <p id="enciptar_desencriptar">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="decrypt-button" onclick="clicDesEncriptar()" id="decrypt-button">Desencriptar</button>
+            </div>
+
+        </section> 
+            
+    </section>  
+
+    </main>
+    <footer class="footer">
+        <p footer_texto> <strong>Encryter v1.0</strong> </p>
+    </footer>
+
+<script src="app.js" ></script>
+
+</body>
+</html>
